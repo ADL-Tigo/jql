@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+}
+
+.navigation nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #198754;
+  margin-bottom: 1rem;
+}
+
+.navigation nav a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-selector{
+  margin-bottom: 1rem;
+}
+
+.project-selector select{
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 0.25rem 0;
+}
+
+.form-control,
+.btn {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid gray;
+  resize: vertical;
+}
+
+.btn {
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  transition: 0.3s;
+  margin: auto;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-success {
+  background-color: #198754;
+}
+
+.btn:hover, .navigation nav a:hover {
+  transform: scale(1.025);
+}
+
+.card {
+  display: none;
+  height: 0;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 1.5rem;
+  margin: 1rem 0 2rem 0;
+  transition: 0.3s;
+}
+
+.card-50 {
+  flex-basis: calc(50% - 1rem);
+}
+
+.show {
+  display: flex;
+  height: auto;
+}

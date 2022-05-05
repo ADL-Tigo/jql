@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>TIGO WEB CONNECTOR MIXPANEL</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <nav>
+        <a href="./">JQL</a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <div class="project-selector">
+          <label for="mixpanel_project">Project: </label>
+          <select name="mixpanel_project" id="mixpanel_project">
+            <option selected value="colombia">Colombia</option>
+            <option value="gateway">Gateway Local-CO</option>
+            <option value="mitigo">Mi Tigo-CO</option>
+          </select>
+        </div>
+        <div class="web_connector" id="connector">
+        </div>
+        <button type="button" class="btn btn-success w-100" id="submitButton">
+          Get Mixpanel Data!
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
